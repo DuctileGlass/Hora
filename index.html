@@ -743,7 +743,7 @@ function updateAll() {
   if (!sun) return;
 
   const utcH = now.getUTCHours() + now.getUTCMinutes() / 60 + now.getUTCSeconds() / 3600;
-  const jdN = julianDate(year, month, day, utcH);
+  const jdN = julianDate(now.getUTCFullYear(), now.getUTCMonth() + 1, now.getUTCDate(), utcH);
   const curHL = now.getHours() + now.getMinutes() / 60;
   const rise = sun.sunrise + tz, noon = sun.solarNoon + tz, set = sun.sunset + tz;
 
