@@ -659,12 +659,12 @@ function drawLunarArc(el, sunsetH, sunriseH, moonRise, moonSet, curH, tz, elong)
 // ── Archana Times ──
 function getArchanaTimes(riseL, noonL, setL) {
   return [
-    { name: 'Prātaḥ', te: 'ప్రాతః', time: riseL },
-    { name: 'Saṅgava', te: 'సంగవ', time: (riseL + noonL) / 2 },
-    { name: 'Madhyāhna', te: 'మధ్యాహ్న', time: noonL },
-    { name: 'Aparāhṇa', te: 'అపరాహ్ణ', time: (noonL + setL) / 2 },
-    { name: 'Sāyam', te: 'సాయం', time: setL },
-    { name: 'Pradoṣa', te: 'ప్రదోష', time: setL + 1.5 }
+    { name: 'Prātyuṣam',  te: 'ప్రాత్యుషం',  time: riseL - 1.6 },
+    { name: 'Prātaḥkāla',  te: 'ప్రాతఃకాలం',  time: riseL },
+    { name: 'Madhyāhna',  te: 'మధ్యాహ్నం',  time: noonL },
+    { name: 'Aparāhṇa',   te: 'అపరాహ్ణం',   time: (noonL + setL) / 2 },
+    { name: 'Sāyaṅkāla',  te: 'సాయంకాలం',  time: setL },
+    { name: 'Niśi',        te: 'నిశి',        time: setL + 1.5 }
   ];
 }
 
